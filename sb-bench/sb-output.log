@@ -1,0 +1,579 @@
+Distro:
+CentOS release 6.7 (Final)
+Kernel \r on an \m
+CPU Info:
+processor	: 0
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 44
+model name	: Intel(R) Xeon(R) CPU           E5620  @ 2.40GHz
+stepping	: 2
+microcode	: 21
+cpu MHz		: 2400.084
+cache size	: 12288 KB
+physical id	: 0
+siblings	: 8
+core id		: 0
+cpu cores	: 4
+apicid		: 0
+initial apicid	: 0
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 11
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 cx16 xtpr pdcm pcid dca sse4_1 sse4_2 popcnt aes lahf_lm arat epb dts tpr_shadow vnmi flexpriority ept vpid
+bogomips	: 4800.16
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 40 bits physical, 48 bits virtual
+power management:
+
+processor	: 1
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 44
+model name	: Intel(R) Xeon(R) CPU           E5620  @ 2.40GHz
+stepping	: 2
+microcode	: 21
+cpu MHz		: 2400.084
+cache size	: 12288 KB
+physical id	: 0
+siblings	: 8
+core id		: 1
+cpu cores	: 4
+apicid		: 2
+initial apicid	: 2
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 11
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 cx16 xtpr pdcm pcid dca sse4_1 sse4_2 popcnt aes lahf_lm arat epb dts tpr_shadow vnmi flexpriority ept vpid
+bogomips	: 4800.16
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 40 bits physical, 48 bits virtual
+power management:
+
+processor	: 2
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 44
+model name	: Intel(R) Xeon(R) CPU           E5620  @ 2.40GHz
+stepping	: 2
+microcode	: 21
+cpu MHz		: 2400.084
+cache size	: 12288 KB
+physical id	: 0
+siblings	: 8
+core id		: 9
+cpu cores	: 4
+apicid		: 18
+initial apicid	: 18
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 11
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 cx16 xtpr pdcm pcid dca sse4_1 sse4_2 popcnt aes lahf_lm arat epb dts tpr_shadow vnmi flexpriority ept vpid
+bogomips	: 4800.16
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 40 bits physical, 48 bits virtual
+power management:
+
+processor	: 3
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 44
+model name	: Intel(R) Xeon(R) CPU           E5620  @ 2.40GHz
+stepping	: 2
+microcode	: 21
+cpu MHz		: 2400.084
+cache size	: 12288 KB
+physical id	: 0
+siblings	: 8
+core id		: 10
+cpu cores	: 4
+apicid		: 20
+initial apicid	: 20
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 11
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 cx16 xtpr pdcm pcid dca sse4_1 sse4_2 popcnt aes lahf_lm arat epb dts tpr_shadow vnmi flexpriority ept vpid
+bogomips	: 4800.16
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 40 bits physical, 48 bits virtual
+power management:
+
+processor	: 4
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 44
+model name	: Intel(R) Xeon(R) CPU           E5620  @ 2.40GHz
+stepping	: 2
+microcode	: 21
+cpu MHz		: 2400.084
+cache size	: 12288 KB
+physical id	: 1
+siblings	: 8
+core id		: 0
+cpu cores	: 4
+apicid		: 32
+initial apicid	: 32
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 11
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 cx16 xtpr pdcm pcid dca sse4_1 sse4_2 popcnt aes lahf_lm arat epb dts tpr_shadow vnmi flexpriority ept vpid
+bogomips	: 4799.89
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 40 bits physical, 48 bits virtual
+power management:
+
+processor	: 5
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 44
+model name	: Intel(R) Xeon(R) CPU           E5620  @ 2.40GHz
+stepping	: 2
+microcode	: 21
+cpu MHz		: 2400.084
+cache size	: 12288 KB
+physical id	: 1
+siblings	: 8
+core id		: 1
+cpu cores	: 4
+apicid		: 34
+initial apicid	: 34
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 11
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 cx16 xtpr pdcm pcid dca sse4_1 sse4_2 popcnt aes lahf_lm arat epb dts tpr_shadow vnmi flexpriority ept vpid
+bogomips	: 4799.89
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 40 bits physical, 48 bits virtual
+power management:
+
+processor	: 6
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 44
+model name	: Intel(R) Xeon(R) CPU           E5620  @ 2.40GHz
+stepping	: 2
+microcode	: 21
+cpu MHz		: 2400.084
+cache size	: 12288 KB
+physical id	: 1
+siblings	: 8
+core id		: 9
+cpu cores	: 4
+apicid		: 50
+initial apicid	: 50
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 11
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 cx16 xtpr pdcm pcid dca sse4_1 sse4_2 popcnt aes lahf_lm arat epb dts tpr_shadow vnmi flexpriority ept vpid
+bogomips	: 4799.89
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 40 bits physical, 48 bits virtual
+power management:
+
+processor	: 7
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 44
+model name	: Intel(R) Xeon(R) CPU           E5620  @ 2.40GHz
+stepping	: 2
+microcode	: 21
+cpu MHz		: 2400.084
+cache size	: 12288 KB
+physical id	: 1
+siblings	: 8
+core id		: 10
+cpu cores	: 4
+apicid		: 52
+initial apicid	: 52
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 11
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 cx16 xtpr pdcm pcid dca sse4_1 sse4_2 popcnt aes lahf_lm arat epb dts tpr_shadow vnmi flexpriority ept vpid
+bogomips	: 4799.89
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 40 bits physical, 48 bits virtual
+power management:
+
+processor	: 8
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 44
+model name	: Intel(R) Xeon(R) CPU           E5620  @ 2.40GHz
+stepping	: 2
+microcode	: 21
+cpu MHz		: 2400.084
+cache size	: 12288 KB
+physical id	: 0
+siblings	: 8
+core id		: 0
+cpu cores	: 4
+apicid		: 1
+initial apicid	: 1
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 11
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 cx16 xtpr pdcm pcid dca sse4_1 sse4_2 popcnt aes lahf_lm arat epb dts tpr_shadow vnmi flexpriority ept vpid
+bogomips	: 4800.16
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 40 bits physical, 48 bits virtual
+power management:
+
+processor	: 9
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 44
+model name	: Intel(R) Xeon(R) CPU           E5620  @ 2.40GHz
+stepping	: 2
+microcode	: 21
+cpu MHz		: 2400.084
+cache size	: 12288 KB
+physical id	: 0
+siblings	: 8
+core id		: 1
+cpu cores	: 4
+apicid		: 3
+initial apicid	: 3
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 11
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 cx16 xtpr pdcm pcid dca sse4_1 sse4_2 popcnt aes lahf_lm arat epb dts tpr_shadow vnmi flexpriority ept vpid
+bogomips	: 4800.16
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 40 bits physical, 48 bits virtual
+power management:
+
+processor	: 10
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 44
+model name	: Intel(R) Xeon(R) CPU           E5620  @ 2.40GHz
+stepping	: 2
+microcode	: 21
+cpu MHz		: 2400.084
+cache size	: 12288 KB
+physical id	: 0
+siblings	: 8
+core id		: 9
+cpu cores	: 4
+apicid		: 19
+initial apicid	: 19
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 11
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 cx16 xtpr pdcm pcid dca sse4_1 sse4_2 popcnt aes lahf_lm arat epb dts tpr_shadow vnmi flexpriority ept vpid
+bogomips	: 4800.16
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 40 bits physical, 48 bits virtual
+power management:
+
+processor	: 11
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 44
+model name	: Intel(R) Xeon(R) CPU           E5620  @ 2.40GHz
+stepping	: 2
+microcode	: 21
+cpu MHz		: 2400.084
+cache size	: 12288 KB
+physical id	: 0
+siblings	: 8
+core id		: 10
+cpu cores	: 4
+apicid		: 21
+initial apicid	: 21
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 11
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 cx16 xtpr pdcm pcid dca sse4_1 sse4_2 popcnt aes lahf_lm arat epb dts tpr_shadow vnmi flexpriority ept vpid
+bogomips	: 4800.16
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 40 bits physical, 48 bits virtual
+power management:
+
+processor	: 12
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 44
+model name	: Intel(R) Xeon(R) CPU           E5620  @ 2.40GHz
+stepping	: 2
+microcode	: 21
+cpu MHz		: 2400.084
+cache size	: 12288 KB
+physical id	: 1
+siblings	: 8
+core id		: 0
+cpu cores	: 4
+apicid		: 33
+initial apicid	: 33
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 11
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 cx16 xtpr pdcm pcid dca sse4_1 sse4_2 popcnt aes lahf_lm arat epb dts tpr_shadow vnmi flexpriority ept vpid
+bogomips	: 4799.89
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 40 bits physical, 48 bits virtual
+power management:
+
+processor	: 13
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 44
+model name	: Intel(R) Xeon(R) CPU           E5620  @ 2.40GHz
+stepping	: 2
+microcode	: 21
+cpu MHz		: 2400.084
+cache size	: 12288 KB
+physical id	: 1
+siblings	: 8
+core id		: 1
+cpu cores	: 4
+apicid		: 35
+initial apicid	: 35
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 11
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 cx16 xtpr pdcm pcid dca sse4_1 sse4_2 popcnt aes lahf_lm arat epb dts tpr_shadow vnmi flexpriority ept vpid
+bogomips	: 4799.89
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 40 bits physical, 48 bits virtual
+power management:
+
+processor	: 14
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 44
+model name	: Intel(R) Xeon(R) CPU           E5620  @ 2.40GHz
+stepping	: 2
+microcode	: 21
+cpu MHz		: 2400.084
+cache size	: 12288 KB
+physical id	: 1
+siblings	: 8
+core id		: 9
+cpu cores	: 4
+apicid		: 51
+initial apicid	: 51
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 11
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 cx16 xtpr pdcm pcid dca sse4_1 sse4_2 popcnt aes lahf_lm arat epb dts tpr_shadow vnmi flexpriority ept vpid
+bogomips	: 4799.89
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 40 bits physical, 48 bits virtual
+power management:
+
+processor	: 15
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 44
+model name	: Intel(R) Xeon(R) CPU           E5620  @ 2.40GHz
+stepping	: 2
+microcode	: 21
+cpu MHz		: 2400.084
+cache size	: 12288 KB
+physical id	: 1
+siblings	: 8
+core id		: 10
+cpu cores	: 4
+apicid		: 53
+initial apicid	: 53
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 11
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 cx16 xtpr pdcm pcid dca sse4_1 sse4_2 popcnt aes lahf_lm arat epb dts tpr_shadow vnmi flexpriority ept vpid
+bogomips	: 4799.89
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 40 bits physical, 48 bits virtual
+power management:
+Disk space: 
+Filesystem      1K-blocks    Used  Available Use% Mounted on
+/dev/sda3       404091584 3504448  380053736   1% /
+tmpfs            66073996       0   66073996   0% /dev/shm
+/dev/sda1          277665   66115     197214  26% /boot
+/dev/nvme0n1p1  781028756   32928  780995828   1% /data
+total          1251472001 3603491 1227320774   1%
+Free: 
+             total       used       free     shared    buffers     cached
+Mem:     132147996    1785964  130362032        200     208772     556836
+-/+ buffers/cache:    1020356  131127640 
+Swap:     16777212          0   16777212 
+dd 1Mx1k fdatasync: 1024+0 records in
+1024+0 records out
+1073741824 bytes (1.1 GB) copied, 2.13791 s, 502 MB/s
+dd 64kx16k fdatasync: 16384+0 records in
+16384+0 records out
+1073741824 bytes (1.1 GB) copied, 2.15079 s, 499 MB/s
+dd 1Mx1k dsync: 1024+0 records in
+1024+0 records out
+1073741824 bytes (1.1 GB) copied, 2.10128 s, 511 MB/s
+dd 64kx16k dsync: 16384+0 records in
+16384+0 records out
+1073741824 bytes (1.1 GB) copied, 3.24044 s, 331 MB/s
+cc -std=c99 -g -Wall -Wextra -pedantic -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -DVERSION=\"0.6\" -c -o ioping.o ioping.c
+cc -o ioping ioping.o -std=c99 -g -Wall -Wextra -pedantic -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -lm
+IOPing I/O: 4096 bytes from . (ext4 /dev/sda3): request=1 time=0.1 ms
+4096 bytes from . (ext4 /dev/sda3): request=2 time=0.1 ms
+4096 bytes from . (ext4 /dev/sda3): request=3 time=0.1 ms
+4096 bytes from . (ext4 /dev/sda3): request=4 time=0.1 ms
+4096 bytes from . (ext4 /dev/sda3): request=5 time=0.1 ms
+4096 bytes from . (ext4 /dev/sda3): request=6 time=0.1 ms
+4096 bytes from . (ext4 /dev/sda3): request=7 time=0.1 ms
+4096 bytes from . (ext4 /dev/sda3): request=8 time=0.1 ms
+4096 bytes from . (ext4 /dev/sda3): request=9 time=0.1 ms
+4096 bytes from . (ext4 /dev/sda3): request=10 time=0.1 ms
+
+--- . (ext4 /dev/sda3) ioping statistics ---
+10 requests completed in 9002.2 ms, 13966 iops, 54.6 mb/s
+min/avg/max/mdev = 0.1/0.1/0.1/0.0 ms
+  IOPing seek rate: 
+--- . (ext4 /dev/sda3) ioping statistics ---
+23007 requests completed in 3000.0 ms, 22372 iops, 87.4 mb/s
+min/avg/max/mdev = 0.0/0.0/0.1/0.0 ms
+  IOPing sequential: 
+--- . (ext4 /dev/sda3) ioping statistics ---
+5578 requests completed in 3000.3 ms, 2173 iops, 543.3 mb/s
+min/avg/max/mdev = 0.4/0.5/5.4/0.1 ms
+  IOPing cached: 
+--- . (ext4 /dev/sda3) ioping statistics ---
+54664 requests completed in 3000.0 ms, 908266 iops, 3547.9 mb/s
+min/avg/max/mdev = 0.0/0.0/0.0/0.0 ms
+FIO_VERSION = fio-2.0.9
+    DEP .depend
+    CC gettime.o
+    CC fio.o
+    CC ioengines.o
+    CC init.o
+    CC stat.o
+    CC log.o
+    CC time.o
+    CC filesetup.o
+    CC eta.o
+    CC verify.o
+    CC memory.o
+    CC io_u.o
+    CC parse.o
+    CC mutex.o
+    CC options.o
+    CC rbtree.o
+    CC smalloc.o
+    CC filehash.o
+    CC profile.o
+    CC debug.o
+    CC lib/rand.o
+    CC lib/num2str.o
+    CC lib/ieee754.o
+    CC crc/crc16.o
+    CC crc/crc32.o
+    CC crc/crc32c-intel.o
+    CC crc/crc32c.o
+    CC crc/crc64.o
+    CC crc/crc7.o
+    CC crc/md5.o
+    CC crc/sha1.o
+    CC crc/sha256.o
+    CC crc/sha512.o
+    CC engines/cpu.o
+    CC engines/mmap.o
+    CC engines/sync.o
+    CC engines/null.o
+    CC engines/net.o
+    CC memalign.o
+    CC server.o
+    CC client.o
+    CC iolog.o
+    CC backend.o
+    CC libfio.o
+    CC flow.o
+    CC diskutil.o
+    CC fifo.o
+    CC blktrace.o
+    CC helpers.o
+    CC cgroup.o
+    CC trim.o
+    CC engines/libaio.o
+    CC engines/posixaio.o
+    CC engines/sg.o
+    CC engines/splice.o
+    CC engines/syslet-rw.o
+    CC engines/guasi.o
+    CC engines/binject.o
+    CC engines/rdma.o
+    CC profiles/tiobench.o
+    CC fio
+FIO random reads:
+randomreads: (g=0): rw=randread, bs=4K-4K/4K-4K, ioengine=libaio, iodepth=64
+fio-2.0.9
+Starting 1 process
+randomreads: Laying out IO file(s) (1 file(s) / 1024MB)
+
+randomreads: (groupid=0, jobs=1): err= 0: pid=6295: Mon Apr  4 16:00:17 2016
+  read : io=1024.3MB, bw=793965KB/s, iops=198491 , runt=  1321msec
+  cpu          : usr=16.52%, sys=83.41%, ctx=16, majf=0, minf=89
+  IO depths    : 1=0.1%, 2=0.1%, 4=0.1%, 8=0.1%, 16=0.1%, 32=0.1%, >=64=100.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.1%, >=64=0.0%
+     issued    : total=r=262207/w=0/d=0, short=r=0/w=0/d=0
+
+Run status group 0 (all jobs):
+   READ: io=1024.3MB, aggrb=793965KB/s, minb=793965KB/s, maxb=793965KB/s, mint=1321msec, maxt=1321msec
+
+Disk stats (read/write):
+  nvme0n1: ios=222057/0, merge=0/0, ticks=23920/0, in_queue=23882, util=91.87%
+Done
+FIO random writes:
+randomwrites: (g=0): rw=randwrite, bs=4K-4K/4K-4K, ioengine=libaio, iodepth=64
+fio-2.0.9
+Starting 1 process
+
+randomwrites: (groupid=0, jobs=1): err= 0: pid=6299: Mon Apr  4 16:00:19 2016
+  write: io=1024.3MB, bw=617684KB/s, iops=154421 , runt=  1698msec
+  cpu          : usr=25.52%, sys=74.43%, ctx=5, majf=0, minf=25
+  IO depths    : 1=0.1%, 2=0.1%, 4=0.1%, 8=0.1%, 16=0.1%, 32=0.1%, >=64=100.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.1%, >=64=0.0%
+     issued    : total=r=0/w=262207/d=0, short=r=0/w=0/d=0
+
+Run status group 0 (all jobs):
+  WRITE: io=1024.3MB, aggrb=617684KB/s, minb=617684KB/s, maxb=617684KB/s, mint=1698msec, maxt=1698msec
+
+Disk stats (read/write):
+  nvme0n1: ios=0/254103, merge=0/0, ticks=0/4566, in_queue=4561, util=94.26%
+Done
+Download Cachefly: 95.1MB/s
+Download Linode, Atlanta, GA, USA: 9.93MB/s
+Download Linode, Dallas, TX, USA: 12.0MB/s
+Download Linode, Tokyo, JP: 68.0MB/s
+Download Linode, London, UK: 342KB/s
+Download OVH, Paris, France: 4.87MB/s

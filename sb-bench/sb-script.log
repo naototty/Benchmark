@@ -1,0 +1,30 @@
+
+###############################################################################
+#                                                                             #
+#             Installation(s) complete.  Benchmarks starting...               #
+#                                                                             #
+#  Running Benchmark as a background task. This can take several hours.       #
+#  ServerBear will email you when it's done.                                  #
+#  You can log out/Ctrl-C any time while this is happening                    #
+#  (it's running through nohup).                                              #
+#                                                                             #
+###############################################################################
+
+Checking server stats...
+Running dd I/O benchmark...
+Running IOPing I/O benchmark...
+Running FIO benchmark...
+Running bandwidth benchmark...
+Benchmarking download from Cachefly (http://cachefly.cachefly.net/100mb.test)
+Got 95.1MB/s
+Benchmarking download from Linode, Atlanta, GA, USA (http://speedtest.atlanta.linode.com/100MB-atlanta.bin)
+Got 9.93MB/s
+Benchmarking download from Linode, Dallas, TX, USA (http://speedtest.dallas.linode.com/100MB-dallas.bin)
+Got 12.0MB/s
+Benchmarking download from Linode, Tokyo, JP (http://speedtest.tokyo.linode.com/100MB-tokyo.bin)
+Got 68.0MB/s
+Benchmarking download from Linode, London, UK (http://speedtest.london.linode.com/100MB-london.bin)
+Got 342KB/s
+Benchmarking download from OVH, Paris, France (http://proof.ovh.net/files/100Mio.dat)
+Got 4.87MB/s
+Benchmarking download from SmartDC, Rotterdam, Netherlands (http://mirror.i3d.net/100mb.bin)

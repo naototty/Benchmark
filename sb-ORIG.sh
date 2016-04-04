@@ -20,6 +20,8 @@ EMAIL=$3
 COST=$4
 PRIVATE=$5
 
+BENCH_PATH=/data
+
 echo "
 ###############################################################################
 #               ServerBear (http://serverbear.com) benchmarker                #
@@ -128,7 +130,7 @@ numjobs=1
 
 [randomreads]
 startdelay=0
-filename=sb-io-test
+filename=${BENCH_PATH}/sb-io-test
 readwrite=randread
 EOF
 
@@ -147,7 +149,7 @@ numjobs=1
 
 [randomwrites]
 startdelay=0
-filename=sb-io-test
+filename=${BENCH_PATH}/sb-io-test
 readwrite=randwrite
 EOF
 
@@ -185,20 +187,28 @@ Free:
 
 echo "Running dd I/O benchmark..."
 
-echo "dd 1Mx1k fdatasync: \`dd if=/dev/zero of=sb-io-test bs=1M count=1k conv=fdatasync 2>&1\`" >> sb-output.log
-echo "dd 64kx16k fdatasync: \`dd if=/dev/zero of=sb-io-test bs=64k count=16k conv=fdatasync 2>&1\`" >> sb-output.log
-echo "dd 1Mx1k dsync: \`dd if=/dev/zero of=sb-io-test bs=1M count=1k oflag=dsync 2>&1\`" >> sb-output.log
-echo "dd 64kx16k dsync: \`dd if=/dev/zero of=sb-io-test bs=64k count=16k oflag=dsync 2>&1\`" >> sb-output.log
+echo "dd 1Mx1k fdatasync: \`dd if=/dev/zero of=${BENCH_PATH}/sb-io-test bs=1M count=1k conv=fdatasync 2>&1\`" >> sb-output.log
+echo "dd 64kx16k fdatasync: \`dd if=/dev/zero of=${BENCH_PATH}/sb-io-test bs=64k count=16k conv=fdatasync 2>&1\`" >> sb-output.log
+echo "dd 1Mx1k dsync: \`dd if=/dev/zero of=${BENCH_PATH}/sb-io-test bs=1M count=1k oflag=dsync 2>&1\`" >> sb-output.log
+echo "dd 64kx16k dsync: \`dd if=/dev/zero of=${BENCH_PATH}/sb-io-test bs=64k count=16k oflag=dsync 2>&1\`" >> sb-output.log
 
-rm -f sb-io-test
+rm -f ${BENCH_PATH}/sb-io-test
 
 echo "Running IOPing I/O benchmark..."
 cd $IOPING_DIR
 make >> ../sb-output.log 2>&1
-echo "IOPing I/O: \`./ioping -c 10 . 2>&1 \`
-IOPing seek rate: \`./ioping -RD . 2>&1 \`
-IOPing sequential: \`./ioping -RL . 2>&1\`
-IOPing cached: \`./ioping -RC . 2>&1\`" >> ../sb-output.log
+
+if [ "a${BENCH_PATH}"=="a" ]; then
+  echo "IOPing I/O: \`./ioping -c 10 . 2>&1 \`
+  IOPing seek rate: \`./ioping -RD . 2>&1 \`
+  IOPing sequential: \`./ioping -RL . 2>&1\`
+  IOPing cached: \`./ioping -RC . 2>&1\`" >> ../sb-output.log
+else
+  echo "IOPing I/O: \`./ioping -c 10 ${BENCH_PATH}/ 2>&1 \`
+  IOPing seek rate: \`./ioping -RD ${BENCH_PATH}/ 2>&1 \`
+  IOPing sequential: \`./ioping -RL ${BENCH_PATH}/ 2>&1\`
+  IOPing cached: \`./ioping -RC ${BENCH_PATH}/ 2>&1\`" >> ../sb-output.log
+fi
 cd ..
 
 echo "Running FIO benchmark..."
@@ -213,7 +223,7 @@ echo "FIO random writes:
 \`./fio writes.ini 2>&1\`
 Done" >> ../sb-output.log
 
-rm sb-io-test 2>/dev/null
+rm ${BENCH_PATH}/sb-io-test 2>/dev/null
 cd ..
 
 function download_benchmark() {
@@ -223,42 +233,45 @@ function download_benchmark() {
   echo "Download \$1: \$DOWNLOAD_SPEED" >> sb-output.log 2>&1
 }
 
-echo "Running bandwidth benchmark..."
-
-download_benchmark 'Cachefly' 'http://cachefly.cachefly.net/100mb.test'
-download_benchmark 'Linode, Atlanta, GA, USA' 'http://speedtest.atlanta.linode.com/100MB-atlanta.bin'
-download_benchmark 'Linode, Dallas, TX, USA' 'http://speedtest.dallas.linode.com/100MB-dallas.bin'
-download_benchmark 'Linode, Tokyo, JP' 'http://speedtest.tokyo.linode.com/100MB-tokyo.bin'
-download_benchmark 'Linode, London, UK' 'http://speedtest.london.linode.com/100MB-london.bin'
-download_benchmark 'OVH, Paris, France' 'http://proof.ovh.net/files/100Mio.dat'
-download_benchmark 'SmartDC, Rotterdam, Netherlands' 'http://mirror.i3d.net/100mb.bin'
-download_benchmark 'Hetzner, Nuernberg, Germany' 'http://hetzner.de/100MB.iso'
-download_benchmark 'iiNet, Perth, WA, Australia' 'http://ftp.iinet.net.au/test100MB.dat'
-download_benchmark 'Leaseweb, Haarlem, NL' 'http://mirror.nl.leaseweb.net/speedtest/100mb.bin'
-download_benchmark 'Leaseweb, Manassas, VA, USA' 'http://mirror.us.leaseweb.net/speedtest/100mb.bin'
-download_benchmark 'Softlayer, Singapore' 'http://speedtest.sng01.softlayer.com/downloads/test100.zip'
-download_benchmark 'Softlayer, Seattle, WA, USA' 'http://speedtest.sea01.softlayer.com/downloads/test100.zip'
-download_benchmark 'Softlayer, San Jose, CA, USA' 'http://speedtest.sjc01.softlayer.com/downloads/test100.zip'
-download_benchmark 'Softlayer, Washington, DC, USA' 'http://speedtest.wdc01.softlayer.com/downloads/test100.zip'
-
-echo "Running traceroute..."
-echo "Traceroute (cachefly.cachefly.net): \`traceroute cachefly.cachefly.net 2>&1\`" >> sb-output.log
-
-echo "Running ping benchmark..."
-echo "Pings (cachefly.cachefly.net): \`ping -c 10 cachefly.cachefly.net 2>&1\`" >> sb-output.log
+##  echo "Running bandwidth benchmark..."
+##  
+##  download_benchmark 'Cachefly' 'http://cachefly.cachefly.net/100mb.test'
+##  download_benchmark 'Linode, Atlanta, GA, USA' 'http://speedtest.atlanta.linode.com/100MB-atlanta.bin'
+##  download_benchmark 'Linode, Dallas, TX, USA' 'http://speedtest.dallas.linode.com/100MB-dallas.bin'
+##  download_benchmark 'Linode, Tokyo, JP' 'http://speedtest.tokyo.linode.com/100MB-tokyo.bin'
+##  download_benchmark 'Linode, London, UK' 'http://speedtest.london.linode.com/100MB-london.bin'
+##  download_benchmark 'OVH, Paris, France' 'http://proof.ovh.net/files/100Mio.dat'
+##  download_benchmark 'SmartDC, Rotterdam, Netherlands' 'http://mirror.i3d.net/100mb.bin'
+##  download_benchmark 'Hetzner, Nuernberg, Germany' 'http://hetzner.de/100MB.iso'
+##  download_benchmark 'iiNet, Perth, WA, Australia' 'http://ftp.iinet.net.au/test100MB.dat'
+##  download_benchmark 'Leaseweb, Haarlem, NL' 'http://mirror.nl.leaseweb.net/speedtest/100mb.bin'
+##  download_benchmark 'Leaseweb, Manassas, VA, USA' 'http://mirror.us.leaseweb.net/speedtest/100mb.bin'
+##  download_benchmark 'Softlayer, Singapore' 'http://speedtest.sng01.softlayer.com/downloads/test100.zip'
+##  download_benchmark 'Softlayer, Seattle, WA, USA' 'http://speedtest.sea01.softlayer.com/downloads/test100.zip'
+##  download_benchmark 'Softlayer, San Jose, CA, USA' 'http://speedtest.sjc01.softlayer.com/downloads/test100.zip'
+##  download_benchmark 'Softlayer, Washington, DC, USA' 'http://speedtest.wdc01.softlayer.com/downloads/test100.zip'
+##  
+##  echo "Running traceroute..."
+##  echo "Traceroute (cachefly.cachefly.net): \`traceroute cachefly.cachefly.net 2>&1\`" >> sb-output.log
+##  
+##  echo "Running ping benchmark..."
+##  echo "Pings (cachefly.cachefly.net): \`ping -c 10 cachefly.cachefly.net 2>&1\`" >> sb-output.log
 
 echo "Running UnixBench benchmark..."
 cd $UNIX_BENCH_DIR
 ./Run -c 1 -c `grep -c processor /proc/cpuinfo` >> ../sb-output.log 2>&1
 cd ..
 
-RESPONSE=\`curl -s -F "upload[upload_type]=unix-bench-output" -F "upload[data]=<sb-output.log" -F "upload[key]=$EMAIL|$HOST|$PLAN|$COST" -F "private=$PRIVATE" $UPLOAD_ENDPOINT\`
+TM_STR=\$(date "+%Y-%m%d")
 
-echo "Uploading results..."
-echo "Response: \$RESPONSE"
+## RESPONSE=\`curl -s -F "upload[upload_type]=unix-bench-output" -F "upload[data]=<sb-output.log" -F "upload[key]=$EMAIL|$HOST|$PLAN|$COST" -F "private=$PRIVATE" $UPLOAD_ENDPOINT\`
+## 
+## echo "Uploading results..."
+## echo "Response: \$RESPONSE"
 echo "Completed! Your benchmark has been queued & will be delivered in a jiffy."
 kill -15 \`ps -p \$\$ -o ppid=\` &> /dev/null
-rm -rf ../sb-bench
+## rm -rf ../sb-bench
+mv -vf ../sb-bench ../sb-bench-\${TM_STR}
 rm -rf ~/.sb-pid
 
 exit 0
